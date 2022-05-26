@@ -1,2 +1,2 @@
-# dio-tqi-html5-css3
+# DIO - BOOTCAMP TQI FULLSTACK DEVELOPER
 Códigos de treinamento no bootcamp TQI Fullstack Developer - DIO
