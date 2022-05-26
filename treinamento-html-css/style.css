@@ -1,0 +1,72 @@
+/*site útil para aprofundar em CSS: https://developer.mozilla.org/pt-BR/docs/Learn*/
+body {
+    background: #f7f7ff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 900px;
+    /*delimita o tamanho do elemento (width = largura; height = altura); max- permite que, se a tela for menos que 900px, o texto se adeque (não saia cortado)*/
+    margin: auto;
+    /*utilizando a margin com valor "auto", cria-se espaçamento de ambos os lados (importante para atender aos diversos tamanhos de tela)*/
+}
+
+.imgtop {
+    border: 1px solid #505050;
+    border-radius: 50%;
+}
+
+#title,
+.subtitle,
+.post_title {
+    /* utiliza-se "#" para ID e "." para classe */
+    color: #505050;
+}
+
+#title {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+a {
+    /* "a" modifica os links (ancoras)*/
+    text-decoration: line-through;
+    color: #505050
+}
+
+.post_title {
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.post {
+    background: #FFF;
+    padding: 15px;
+    border: 3px solid #505050;
+    /* é possível especificar o lado (-top -right -bottom -left), estilizando largura, estilo e cor (ou especificar em cada linha incluíndo -width, -color e -style); ou ainda, criar uma regra mais específica, ex.: border-top-color; por fim, é possível arredondar os cantos do elemento, utilizando -radius: (px ou %) */
+    margin-bottom: 15px;
+    /*background-image: url("site") - para colocar uma imagem de fundo, inserir no espaço entre () a url*/
+    border-radius: 5px;
+}
+
+.post_content {
+    margin: 0;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+.post_image {
+    margin-bottom: 15px;
+    width: 100%;
+    height: 250px;
+}
+
+.contact_list {
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+.contact_list li a {
+    /* ao colocar os caminhos "li" e "a" após a classe, modificou somente os elementos dessa classe*/
+    text-decoration: none;
+}
