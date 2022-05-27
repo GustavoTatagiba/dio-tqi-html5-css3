@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "amatic sc", sans-serif;
+}
+
+.wrapper {
+    height: 100vh;  /* http://devfuria.com.br/html-css/unidade-vw-vh-vmax-vmin/ */
+    width: 100vw;
+    background: linear-gradient(-45deg, #4e0878, #085078, #4ca59b, #1fa194); /* essa função permite "misturar" as cores */
+    background-size: 400% 400%;/* permite a background ocupar todo o espaço da animação, aparecendo na tela parte das cores. As demais aparecerão durante a animação*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: backgroundTransition 8s ease-in-out infinite; /* ref animação de troca de cor do background*/
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.social-media {
+    margin-top: 1rem;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 1rem 4rem;
+    border: 1px solid #ffffff;
+    min-width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s cubic-bezier(0.55, 0.25, 0.675, 0.97); /* define manualmente as curvas da animação, movimentação, velocidade etc (animação ao passar o cursor dentro dos links Linkedin e Github)*/
+ }
+
+a:hover {
+    color: #085078;
+    background-color: white;
+}
+
+@keyframes backgroundTransition {   /* ref animação de troca de cor do background*/
+    0% {
+        background-position: 0% 80%;  /* posição da animação dentro do contender */
+    }
+    50% {
+        background-position: 80% 100%;
+    }
+    100% {
+        background-position: 0% 90%;
+    }
+}
